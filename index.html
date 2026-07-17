@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>다혜's Web Portfolio</title>
+    <meta name="description" content="웹 퍼블리셔 다혜의 포트폴리오입니다." />
+
+    <!-- 폰트 -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- 스킵 네비게이션 -->
+    <div class="skip-nav">
+      <a href="#container">본문 바로가기</a>
+    </div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+      <div class="inner">
+        <p class="logo">
+          <a href="#home">DAHYE'S <span>WEB PORTFOLIO</span></a>
+        </p>
+
+        <nav>
+          <ul class="gnb" id="gnb">
+            <li><a href="#about" class="is-active">ABOUT ME</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#project">PROJECT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <button
+          type="button"
+          class="header-mobile-btn"
+          id="mobileNavBtn"
+          aria-label="전체메뉴 열기"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 모바일 전체메뉴 -->
+    <div class="mobile-nav-dim" id="mobileNavDim"></div>
+    <nav class="mobile-nav" id="mobileNav">
+      <button
+        type="button"
+        class="mobile-nav-close"
+        id="mobileNavClose"
+        aria-label="전체메뉴 닫기"
+      >
+        ✕
+      </button>
+      <ul class="mobile-nav-list">
+        <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#project">PROJECT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <main id="container">
+      <!-- ==================== HERO ==================== -->
+      <section class="hero" id="home">
+        <div class="inner">
+          <p class="greet">안녕하세요 :)</p>
+          <p class="headline">
+            UI/UX 퍼블리싱<br />
+            <span class="point">4</span>년 차 웹 퍼블리셔
+            <span class="point">정다혜</span>입니다.
+          </p>
+          <div class="role-tags">
+            <span>UI/UX Design</span>
+            <span>Publishing</span>
+          </div>
+        </div>
+
+        <div class="hero-scroll">
+          <span>SCROLL</span>
+          <div class="line"></div>
+        </div>
+      </section>
+
+      <!-- ==================== ABOUT ME ==================== -->
+      <section class="section about" id="about">
+        <div class="inner">
+          <span class="section-num">01. ABOUT ME</span>
+          <p class="section-title">About Me</p>
+          <div class="about-top">
+            <div class="about-profile">
+              <div class="photo">
+                <img src="/images/profile.png" alt="프로필 이미지" />
+              </div>
+              <p class="name">다혜</p>
+              <p class="role">Web Publisher</p>
+            </div>
+
+            <div class="about-info">
+              <div class="about-intro">
+                <p>
+                  웹 표준과 사용자 경험 사이에서 균형을 찾는 4년차
+                  퍼블리셔입니다.<br />
+                  반응형/적응형 레이아웃 설계부터 웹 접근성(WA) 준수,<br />
+                  컴포넌트 단위의 재사용 가능한 마크업 설계까지 다뤄왔습니다
+                </p>
+              </div>
+
+              <div class="about-lists">
+                <div class="career">
+                  <h4>CAREER</h4>
+                  <ul>
+                    <li>
+                      <span class="period">2025.09 ~ 2026.03</span
+                      ><span>(주)에이치나인<br />주임</span>
+                    </li>
+                    <li>
+                      <span class="period">2025.01 ~ 2025.09</span
+                      ><span>(주)상록에스<br />주임</span>
+                    </li>
+                    <li>
+                      <span class="period">2023.06 ~ 2025.01</span
+                      ><span>(주)유토퍼스<br />주임</span>
+                    </li>
+                    <li>
+                      <span class="period">2022.03 ~ 2023.06</span
+                      ><span>(주)이퓨전아이<br />사원</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="education">
+                  <h4>EDUCATION</h4>
+                  <ul>
+                    <li>
+                      <span class="period">2025 ~ 현재</span
+                      ><span>한양 사이버 대학교 컴퓨터 공학과</span>
+                    </li>
+                    <li>
+                      <span class="period">2015 ~ 2018</span
+                      ><span>연성대학교 정보통신과</span>
+                    </li>
+                    <li>
+                      <span class="period">2021.10 ~ 2022.03</span
+                      ><span
+                        >그린컴퓨터 아카데미 [비전공/초보자] 웹디자인 &
+                        웹퍼블리셔 양성과정</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SKILLS MARQUEE -->
+          <div class="skills">
+            <ul class="skills-track">
+              <li class="skill-chip"><span class="dot"></span>HTML5</li>
+              <li class="skill-chip"><span class="dot"></span>CSS3</li>
+              <li class="skill-chip"><span class="dot"></span>JavaScript</li>
+              <li class="skill-chip"><span class="dot"></span>TypeScript</li>
+              <li class="skill-chip"><span class="dot"></span>React</li>
+              <li class="skill-chip"><span class="dot"></span>Figma</li>
+              <li class="skill-chip"><span class="dot"></span>Photoshop</li>
+              <li class="skill-chip"><span class="dot"></span>Illustrator</li>
+              <li class="skill-chip"><span class="dot"></span>Adobe XD</li>
+              <li class="skill-chip"><span class="dot"></span>jQuery</li>
+              <li class="skill-chip"><span class="dot"></span>Git</li>
+              <li class="skill-chip"><span class="dot"></span>Claude ai</li>
+              <!-- 무한 루프 연출을 위해 위 목록을 그대로 반복합니다 -->
+              <li class="skill-chip"><span class="dot"></span>HTML5</li>
+              <li class="skill-chip"><span class="dot"></span>CSS3</li>
+              <li class="skill-chip"><span class="dot"></span>JavaScript</li>
+              <li class="skill-chip"><span class="dot"></span>TypeScript</li>
+              <li class="skill-chip"><span class="dot"></span>React</li>
+              <li class="skill-chip"><span class="dot"></span>Figma</li>
+              <li class="skill-chip"><span class="dot"></span>Photoshop</li>
+              <li class="skill-chip"><span class="dot"></span>Illustrator</li>
+              <li class="skill-chip"><span class="dot"></span>Adobe XD</li>
+              <li class="skill-chip"><span class="dot"></span>jQuery</li>
+              <li class="skill-chip"><span class="dot"></span>Git</li>
+              <li class="skill-chip"><span class="dot"></span>Claude ai</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== WORK ==================== -->
+      <section class="section work" id="work">
+        <div class="inner">
+          <span class="section-num">02. WORK</span>
+          <p class="section-title">Work</p>
+
+          <ul class="work-grid">
+            <li class="work-card">
+              <a href="#" target="_blank" rel="noopener">
+                <div class="thumb">
+                  <img
+                    src="/images/hyundai_autoever.svg"
+                    alt="HYUNDAI AutoEver"
+                  />
+                  <div class="thumb-overlay">VIEW MORE</div>
+                </div>
+                <p class="name">
+                  현대 오토에버 SHE Portal<br />사내 안전관리 사이트 구축
+                </p>
+                <p class="role">HTML5/React/TypeScript</p>
+                <p class="role">기여도 50%</p>
+              </a>
+            </li>
+
+            <li class="work-card">
+              <a href="#" target="_blank" rel="noopener">
+                <div class="thumb">
+                  <img
+                    src="/images/hyundai_autoever.svg"
+                    alt="HYUNDAI AutoEver"
+                  />
+                  <div class="thumb-overlay">VIEW MORE</div>
+                </div>
+                <p class="name">현대 오토에버 GSPS<br />사내 사이트 구축</p>
+                <p class="role">퍼블리싱 · React · TypeScript</p>
+                <p class="role">기여도 50%</p>
+              </a>
+            </li>
+
+            <li class="work-card">
+              <a
+                href="https://www.ebse.co.kr/apps/main/main.do"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="thumb">
+                  <img src="/images/ebs_english.svg" alt="EBS english" />
+                  <div class="thumb-overlay">VIEW MORE</div>
+                </div>
+                <p class="name">EBS english<br />사이트 운영 및 고도화</p>
+                <p class="role">퍼블리싱 · 반응형</p>
+                <p class="role">기여도 100%</p>
+              </a>
+            </li>
+
+            <li class="work-card">
+              <a
+                href="https://www.togetherschool.go.kr/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="thumb">
+                  <img src="/images/together_school.png" alt="함께학교" />
+                  <div class="thumb-overlay">VIEW MORE</div>
+                </div>
+                <p class="name">함께학교<br />사이트 구축</p>
+                <p class="role">퍼블리싱 · 반응형</p>
+                <p class="role">기여도 100%</p>
+              </a>
+            </li>
+
+            <li class="work-card">
+              <a
+                href="https://www.maeili.com/main.do"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="thumb">
+                  <img src="/images/maeil.png" alt="작업물 05" />
+                  <div class="Maeil">VIEW MORE</div>
+                </div>
+                <p class="name">
+                  매일유업 (매일아이/매일다이렉트/우유안부) 유지보수 및 운영
+                </p>
+                <p class="role">퍼블리싱 · 적응형</p>
+                <p class="role">기여도 100%</p>
+              </a>
+            </li>
+
+            <li class="work-card">
+              <a href="https://ohui.com/" target="_blank" rel="noopener">
+                <div class="thumb">
+                  <img src="/images/lg.svg" alt="LG 생활건강" />
+                  <div class="thumb-overlay">VIEW MORE</div>
+                </div>
+                <p class="name">
+                  LG 생활건강 (오휘/빌리프/보닌/메소드/사가오브수) 유지보수 및
+                  운영
+                </p>
+                <p class="role">퍼블리싱 · 적응형</p>
+              </a>
+            </li>
+
+            <li class="work-card">
+              <a href="#" target="_blank" rel="noopener">
+                <div class="thumb">
+                  <img src="/images/soil.png" alt="S-OIL BONUS CARD" />
+                  <div class="thumb-overlay">VIEW MORE</div>
+                </div>
+                <p class="name">S-OIL BONUS CARD</p>
+                <p class="role">퍼블리싱</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==================== PROJECT ==================== -->
+      <section class="section project" id="project">
+        <div class="inner">
+          <span class="section-num">03. PROJECT</span>
+          <p class="section-title">Project</p>
+          <p class="section-desc">
+            개인적으로 진행한 사이드 프로젝트/클론 코딩 작업물입니다.
+          </p>
+
+          <ul class="project-grid">
+            <li class="project-card">
+              <a
+                href="https://crlkg.github.io/kokoa-clone-2025/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="thumb">
+                  <img src="/images/kako.png" alt="Kakao" />
+                  <div class="thumb-overlay">VIEW MORE</div>
+                </div>
+                <p class="name">카카오톡 클론</p>
+                <div class="meta">
+                  <div class="tags">
+                    <span>카카오톡 클론</span><span>#mobile</span>
+                  </div>
+                  <span class="year">2025</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-card">
+              <a
+                href="https://crlkg.github.io/BooK/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="thumb">
+                  <img src="/images/project_thum01.png" alt="Book" />
+                  <div class="thumb-overlay">VIEW MORE</div>
+                </div>
+                <p class="name">Book</p>
+                <div class="meta">
+                  <div class="tags">
+                    <span>책 소개 사이트</span><span>#Vue</span>
+                  </div>
+                  <span class="year">2024</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==================== CONTACT ==================== -->
+      <section class="section contact" id="contact">
+        <div class="inner">
+          <span class="section-num">04. CONTACT</span>
+          <p class="section-title">
+            함께 일할 웹 퍼블리셔를<br />찾고 계신가요?
+          </p>
+          <p class="section-desc">
+            언제든 편하게 연락 주세요. 빠르게 확인하고 답장 드리겠습니다.
+          </p>
+
+          <p class="email">
+            <a href="mailto:email@example.com">crlkg.j@gmail.com</a>
+          </p>
+
+          <a href="mailto:crlkg.j@gmail.com" class="btn-mail">메일 보내기 ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="inner">
+        <div class="footer-bottom">
+          <p class="footer-copy">&copy; DAHYE. ALL RIGHTS RESERVED.</p>
+
+          <div class="footer-links">
+            <a href="#" target="_blank" rel="noopener">Resume</a>
+            <a href="#" target="_blank" rel="noopener">Blog</a>
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#home" class="footer-top-btn" id="footerTopBtn"
+              >RETURN TOP ↑</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
